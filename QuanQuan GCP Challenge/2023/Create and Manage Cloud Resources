@@ -83,7 +83,7 @@ You need to:
     
 Solutions:
 
-Activate the cloud shell and Copy and Paste the following commands:
+** Activate the cloud shell and Copy and Paste the following commands**:
 
 cat << EOF > startup.sh
 #! /bin/bash
