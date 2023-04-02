@@ -1,1 +1,20 @@
 This is the solution
+
+Task 1. Create a project jumphost instance
+
+You will use this instance to perform maintenance for the project.
+
+Requirements:
+
+Name the instance <b>Instance name</b>.
+Use an <i>f1-micro</i> machine type.
+Use the default image type (Debian Linux).
+
+
+
+Task 2. Create a Kubernetes service cluster
+The team is building an application that will use a service running on Kubernetes. You need to:
+
+Create a zonal cluster using <b><filled in at lab start></b>.
+Use the Docker container hello-app (gcr.io/google-samples/hello-app:2.0) as a placeholder; the team will replace the container with their own work later.
+Expose the app on port <b>App port number</b>.
