@@ -1,6 +1,6 @@
 Task 1: Create a dataset to store your machine learning models
 
-
+You can create dataset manually or using the equivalent code:
 bq mk austin
 
 
@@ -40,7 +40,7 @@ ON
 
 WHERE
 
-    EXTRACT(YEAR FROM start_time) = 2018
+    EXTRACT(YEAR FROM start_time) = <YOUR YEAR>
 
     AND duration_minutes > 0
 
@@ -68,7 +68,7 @@ SELECT
 
 FROM `bigquery-public-data.austin_bikeshare.bikeshare_trips` AS trips
 
-WHERE EXTRACT(YEAR FROM start_time) = 2018
+WHERE EXTRACT(YEAR FROM start_time) = <YOUR YEAR>
 
 
 #####
@@ -112,7 +112,7 @@ FROM
 
     trips.start_station_name = stations.name
 
-  WHERE EXTRACT(YEAR FROM start_time) = 2019)
+  WHERE EXTRACT(YEAR FROM start_time) = <YOUR YEAR>)
 
 )
 
@@ -146,7 +146,7 @@ FROM
 
   WHERE
 
-    EXTRACT(YEAR FROM start_time) = 2019)
+    EXTRACT(YEAR FROM start_time) = <YOUR YEAR>)
 
 )
 
@@ -168,7 +168,7 @@ FROM
 
 WHERE
 
-  EXTRACT(YEAR FROM start_time) = 2019
+  EXTRACT(YEAR FROM start_time) = <YOUR YEAR>
 
 GROUP BY
 
@@ -202,7 +202,7 @@ FROM
 
 WHERE 
 
-  EXTRACT(YEAR FROM start_time) = 2019
+  EXTRACT(YEAR FROM start_time) = <YOUR YEAR>
 
   AND subscriber_type = 'Single Trip'
 
